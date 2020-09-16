@@ -3,9 +3,29 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Alteração de Senha</title>
+
+
 </head>
 <body>
+    <h1>Solicitação de alteração da senha</h1>
+
+    <p>
+        para medidas de segurança pedimos para que você gere uma
+        senha diferenta da antiga que estava em uso.
+    </p>
+
+    <label for="Senha">Nova Senha</label><br />
+    <input type="password" placeholder="Senha" id="password" required><br /><br />
+
+    <label for="Confirme Senha">Repitir Senha</label><br />
+    <input type="password" placeholder="Confirme Senha" id="confirm_password" required><br /><br />
+
+    <input type="checkbox" id="CheckBox" name="CheckBox" />
+    <label for="CheckBox">Não sou um robô</label><br /><br />
+
+    <!--<input type="button" id="btnConfirmar" name="btnConfirmar" style="width: 180px; height: 30px" />-->
+    <button name="btnConfirmar" style="width: 180px; height: 30px">Confirmar</button>
 
 </body>
 </html>
