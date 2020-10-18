@@ -1,40 +1,61 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
-<head runat="server"> 
+<head runat="server">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DP Serviços Financeiros</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link rel="stylesheet" href="styles/Styledp.css" />
 
+    <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
 
 </head>
 <body>
-    <section class="form-section">
-        <h1>Bem Vindo a DP Financiamentos</h1>
+
+
+    <div class="topnav">
+        <a href="Tela menu inicial.html"><img src="Images/WhatsApp Image 2020-10-18 at 19.39.33.jpeg" /> </a><br />
+        <br />
+        <a href="Tela menu inicial.html">Home</a>
+        <a href="Tela de login.html">Login</a>
+        <a href="Tela de cadastro.html">Cadastre-se</a>
+        <a href="#">Contato</a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2 style="color: white"> Acessar Conta</h2>
+    </div>
+    
+
+        <h1>Bem Vindo à DP Financiamentos</h1>
         <h2>Faça seu login</h2>
 
-        <div class="form-wrapper">
-            <form action="#" method="post">
-                <div class="input-block">
-                    <label for="login-email">Email</label>
-                    <input type="email" id="login-email" placeholder="e-mail" required/><br />
-                </div>
-                <div class="input-block">
-                    <label for="login-password">Password</label>
-                    <input type="password" id="login-password"  placeholder="password" required/>
-                </div>
-                <div>
-                    <div class="g-recaptcha" data-sitekey="6LfrLM0ZAAAAAGy5FQ2F_ftPd4dv5j1UNUeTRfXz"></div>
-                    <br />
-                   
+        
+        <form action="#" method="post">
 
-                </div>
-                <button type="submit" class="btn-login">Login</button>
-            </form>
-        </div>
-    </section>
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="e-Mail" required /><br />
+
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Password" required /><br />
+            <br />
+
+            <div  class="g-recaptcha" data-sitekey="6LfrLM0ZAAAAAGy5FQ2F_ftPd4dv5j1UNUeTRfXz"></div>
+            <br />
+
+            <button class="button" type="submit">Voltar</button>
+            <button class="button" type="submit">Confirmar</button>
+            <br />
+            <br />
+            <br />
+            <br />
+        </form>
+     
+   
 
 
     <script src="script.js"></script>
