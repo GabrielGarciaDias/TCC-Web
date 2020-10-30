@@ -147,14 +147,14 @@ img {
 
 .button2 {
     display: inline-block;
-    background-color: black;
-    border: none;
     color: #FFFFFF;
     font-size: 15px;
     padding: 20px;
     width: 400px;
     transition: all 0.5s;
     cursor: pointer;
+    background-color: black;
+    border: none;
 }
 
     .button2 span {
@@ -175,10 +175,11 @@ img {
 
     .button2:hover span {
         padding-right: 25px;
+        color: #ff6a00
     }
 
         .button2:hover span:after {
             opacity: 1;
             right: 0;
-            color: black;
+            color: #ff6a00;
         }
