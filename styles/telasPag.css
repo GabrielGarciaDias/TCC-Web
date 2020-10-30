@@ -2,6 +2,10 @@
     background-color: white;
 }
 
+.b2{
+   
+}
+
 label {
     display: block;
     margin-top: 0px;
@@ -77,6 +81,10 @@ img {
     float: right;
 }
 
+.img2{
+    float: left;
+}
+
 .p {
     color: #808080;
     text-align: left;
@@ -137,3 +145,5 @@ img {
         width: 100%;
     }
 }
+
+

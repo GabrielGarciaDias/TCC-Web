@@ -126,7 +126,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\financeira3.jpg" />
-    <Content Include="Images\topnav 8.jpg" />
+    <Content Include="Images\icone projeto.png" />
+    <Content Include="Images\imagens_proejto.jpg" />
+    <Content Include="Images\WhatsApp Image 2020-10-18 at 19.14.35.jpeg" />
     <Content Include="Images\WhatsApp Image 2020-10-18 at 19.39.33.jpeg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
