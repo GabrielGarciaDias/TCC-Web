@@ -83,6 +83,7 @@ img {
 
 .img2{
     float: left;
+
 }
 
 .p {
@@ -116,8 +117,6 @@ img {
 
 .footer {
     background-color: black;
-    padding: 20px;
-    text-align: center;
 }
 
 .column {
@@ -146,4 +145,40 @@ img {
     }
 }
 
+.button2 {
+    display: inline-block;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 20px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
 
+    .button2 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 1.0s;
+    }
+
+        .button2 span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .button2:hover span {
+        padding-right: 25px;
+    }
+
+        .button2:hover span:after {
+            opacity: 1;
+            right: 0;
+            color: black;
+        }
