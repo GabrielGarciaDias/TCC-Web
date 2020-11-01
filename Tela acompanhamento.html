@@ -6,26 +6,46 @@
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Acompanhamento</a>
+        <a href="#">Financiamento</a>
+        <a href="#">Simulação</a>
+        <a href="#">Ajuda</a>
+    </div>
+    <br />
+
     <h1>Financiamento</h1>
     <!--ATENÇÃO ESTA TUDO EM TEXTO DEPOIUS PASSAR PARA A MOEDA-->
-    <label for="txtFinanciamento">Financiamento</label><br />
-    <input type="text" id="txtFinanciamento" name="txtFinanciamento" placeholder="Aqui aparecerá o valor do financiamento" required /><br />
-    <label for="txtParcelas">Parcelas</label><br />
-    <input type="text" id="txtParcelas" name="txtParcelas" placeholder="Aqui aparecerá o número da parcela" required /><br />
 
-    <label for="dateInicial"></label>Data Inicial<br />
-    <input type="date" id="dateInicial" name="dateInicial" placeholder="Aqui aparecerá a data inicial" required /><br />
-    <label for="dateFinal">Data Final</label><br />
-    <input type="date" id="dateFinal" name="dateFinal" placeholder="Aqui aparecerá a data ginall" required /><br />
+    <label for="txtFinanciamento">Financiamento</label>
+    <input type="text" id="txtFinanciamento" name="txtFinanciamento" required /><br />
+    <label for="txtParcelas">  Parcelas</label>
+    <input type="text" id="txtParcelas" name="txtParcelas" required /><br />
 
-    <label for="txtJuros">Juros</label><br />
-    <input type="text" id="txtJuros" name="txtJuros" placeholder="Aqui aparecerá o valor do juros" required /><br />
-    <label for="txtValorTotal">Valor Total</label><br />
-    <input type="text" id="txtValorTotal" name="txtValorTotal" placeholder="Aqui aparecerá o valor total" required /><br />
+    <label for="dateInicial">  Data Inicial</label>
+    <input type="date" id="dateInicial" name="dateInicial" required /><br />
+    <label for="dateFinal">  Data Final</label>
+    <input type="date" id="dateFinal" name="dateFinal" required /><br />
+    <label for="txtMoeda">Moeda</label><br />
+    <select id="txtMoeda" name="txtMoeda">
+        <option value="txtMoeda">Real</option>
+        <option value="txtMoeda">Dólar</option>
+        <option value="txtMoeda">Euro</option>
+        <option value="txtMoeda">BitCoin</option>
+    </select>
+    <br />
+    <br />
+    <label for="txtJuros">  Juros</label>
+    <input type="text" id="txtJuros" name="txtJuros" required /><br />
+    <label for="txtValorTotal">  Valor Total</label>
+    <input type="text" id="txtValorTotal" name="txtValorTotal" required /><br />
 
-    <label for="txtValorParcela">Valor da Parcela</label><br />
-    <input type="text" id="txtValorParcela" name="txtValorParcela" placeholder="Aqui aparecerá o valor da parcela" required /><br />
+    <label for="txtValorParcela">  Valor da Parcela</label>
+    <input type="text" id="txtValorParcela" name="txtValorParcela" required /><br />
+    <label for="dateVencimento">Vencimento</label>
+    <input type="date" id="dateVencimento" name="dateVencimento" placeholder="Aqui aparecerá a data de vencimento do boleto" required /><br />
     <br /><br />
     <label for="txt">situação do Financiamento Ex: Análise</label><br />
     <!--situação do Financiamento Ex: Análise-->
@@ -33,10 +53,13 @@
     <label for="txt">Status do financiamento Ex: Pagando</label><br />
     <!--Status do financiamento Ex: Pagando-->
     <br /><br />
-    <label for="dateSolicitado">Solicitado</label><br />
+    <label for="dateSolicitado">Solicitado</label>
     <input type="date" id="dateSolicitado" name="dateSolicitado" placeholder="Aqui aparecerá a data de solicitação do boleto" required /><br />
     <!-- VER DEPOIS COMO LINKAR UMA PÁGINA SEM SAIR DA OUTRA-->
-    <a href="Tela de exibir mais.html">Exibir Mais</a>
+    <a href="Tela de exibir mais.html" style="color: black">Exibir Mais</a>
+    <br />
+    <br />
+    <br />
 
 
 </body>

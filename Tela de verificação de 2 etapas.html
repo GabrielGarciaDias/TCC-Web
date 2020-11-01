@@ -4,22 +4,31 @@
     <meta charset="utf-8" />
     <title>Vericação</title>
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
+
+    <div class="menu">
+        <a href="Tela pós Login.html">Home</a>
+        <a href="Tela acompanhamento.html">Acompanhamento</a>
+        <a href="#">Financiamento</a>
+        <a href="#">Simulação</a>
+        <a href="#">Ajuda</a>
+    </div>
+
     <h1>Verificação de 2 etapas</h1>
 
     <p>Um codigo será enviado dentro de 10 segundos a 10 minutos para a sua caixa de e-mail.</p>
 
-    <p> insira o código abaixo para continuar com o acesso a sua conta.</p>
+    <p> insira o código abaixo para continuar com o acesso a sua conta.</p><br />
 
     <form name="verificacao" action="#" method="get">
-        <label for="txtCodigoDeSeguranca">Código de Segurança</label><br />
+        <label for="txtCodigoDeSeguranca">Código de Segurança</label>
         <input type="text" id="txtCodigoDeSeguranca" name="txtCodigoDeSeguranca" placeholder="Ex: K7Y8718HJ213" required /><br /><br />
 
-        <input type="checkbox" id="Checkbox" name="Checkbox" required />
-        <label for="checkbox">Não sou um robô</label><br /><br />
+        <div class="g-recaptcha" data-sitekey="6LfrLM0ZAAAAAGy5FQ2F_ftPd4dv5j1UNUeTRfXz"></div><br />
 
-        <input type="submit" value="Entrar" />
+        <button style="width: 250px" class="button" type="submit">Entrar</button>
     </form>
 </body>
 </html>

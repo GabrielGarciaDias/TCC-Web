@@ -4,29 +4,44 @@
 <head>
     <meta charset="utf-8" />
     <title>Alteração de Senha</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
 
 
 </head>
 <body>
-    <h1>Solicitação de alteração da senha</h1>
 
-    <p>
-        para medidas de segurança pedimos para que você gere uma
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="Tela acompanhamento.html">Acompanhamento</a>
+        <a href="#">Financiamento</a>
+        <a href="#">Simulação</a>
+        <a href="#">Ajuda</a>
+    </div>
+
+    <h1>Alterar senha</h1>
+
+    <p style="color: gray; font-size: 20px">
+        Para medidas de segurança pedimos para que você gere uma
         senha diferenta da antiga que estava em uso.
     </p>
 
-    <label for="Senha">Nova Senha</label><br />
+    <label for="Senha">Nova Senha</label>
     <input type="password" placeholder="Senha" id="password" required><br /><br />
 
-    <label for="Confirme Senha">Repitir Senha</label><br />
-    <input type="password" placeholder="Confirme Senha" id="confirm_password" required><br /><br />
+    <label for="Confirme Senha">Repitir Senha</label>
+    <input type="password" placeholder="Confirmar Senha" id="confirm_password" required><br /><br />
 
-    <input type="checkbox" id="CheckBox" name="CheckBox" />
-    <label for="CheckBox">Não sou um robô</label><br /><br />
+    <div class="g-recaptcha" data-sitekey="6LfrLM0ZAAAAAGy5FQ2F_ftPd4dv5j1UNUeTRfXz"></div>
+    <br />
+    <br />
 
-    <!--<input type="button" id="btnConfirmar" name="btnConfirmar" style="width: 180px; height: 30px" />-->
-    <button name="btnConfirmar" style="width: 180px; height: 30px">Confirmar</button>
+    <a href="#">
+        <div class="button" style="width: 200px; height: 80px; text-align: center">
+            <p style="color: white; text-decoration: none; text-align: center">Enviar</p>
+        </div>
+    </a>
 
 </body>
 </html>
