@@ -17,15 +17,17 @@
 
     <h1>Recuperação de senha</h1>
 
-    <p>Um link para alteração de senha será enviado para seu e-mail dentro de 10 segundos a 10 minutos.</p>
-
-    <p> insira o seu e-mail abaixo para recuperar a senha de acesso da sua conta.</p>
+    <p>Necessitamos de algumas informações pessoais para realizar o seu acesso.</p>
 
     <form name="verificacao" action="#" method="get">
-        <label for="txtEmail">E-mail</label><br />
-        <input type="text" id="txtEmail" name="txtEmail" placeholder="Ex: DPfinanciamentos@hotmail.com" required /><br /><br />
+        <label for="txtEmail">E-mail </label>
+        <input type="text" id="txtEmail" name="txtEmail" required /><br />
+        <label for="txtCPF/CNPJ">CPF/CNPJ</label>
+        <input type="text" id="txtCPF/CNPJ" name="txtCPF/CNPJ" required /><br />
+        <label for="txtTelefone">Telefone</label>
+        <input type="text" id="txtTelefone" name="txtTelefone" required /><br />
 
-        <input type="submit" value="Enviar" />
+        <button style="width: 250px; margin: 10px" class="button" type="submit">Entrar</button><br />
     </form>
 </body>
 </html>
