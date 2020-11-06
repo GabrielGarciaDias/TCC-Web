@@ -8,20 +8,32 @@
 
 <body>
 
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="Tela acompanhamento.html">Acompanhamento</a>
+        <a href="#">Financiamento</a>
+        <a href="#">Simulação</a>
+        <a href="Tela de ajuda.html">Ajuda</a>
+    </div>
+
+    <h1>Simulação de Financiamento</h1>
+
+    <label>Digite sua renda mensal</label>
     <input type="text" id="txtRenda" name="txtRenda" placeholder="Renda" required /><br />
-    <br />
+    <label>Digite o Valor do Financiamento</label>
     <input type="text" id="txtVFinanciamento" name="txtVFinanciamento" placeholder="Valor do financiamento" required />
 
-    <input type="button" name="txtSimular" value="Simular" /> <br />
-    <br />
+    <label>Digite o número de parcelas que deseja realizar o financiamento</label>
     <input type="text" id="txtParcelas" name="txtParcelas" placeholder="Parcelas" required /><br />
-    <br />
 
+    <button class="button" style="width: 200px; margin: 30px" type="submit">Simular</button>
+
+    <br />
+    <br />
     <textarea>Texto simulando o financiamento... </textarea><br />
-    <input type="button" name="txtSolicitar" value="Solicitar" />
-    <input type="button" name="txtVoltar" value="Voltar" />
-    <!--Não editei nada so adicionei a linha abaixo-->
-    <a href="Tela do usuario.html">Voltar</a>
+
+    <button class="button" style="width: 180px" type="submit">Voltar</button>
+    <button class="button" style="width: 180px" type="submit">Solicitar</button>
 
 </body>
 </html>
