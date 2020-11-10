@@ -2,45 +2,45 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Acompanhamento</title>
+    <title>DP Financiamentos</title>
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
     <div class="menu">
-        <a href="#">Home</a>
-        <a href="Tela acompanhamento.html">Financiamento</a>
-        <a href="Tela de exibir mais.html">Acompanhamento</a>
-        <a href="#">Simulação</a>
-        <a href="#">Ajuda</a>
+        <a href="Tela do Usuário.html">Home</a>
+        <a href="Tela de simulação.html">Simulação</a>
+        <a href="Tela Financiamento.html">Financiamento</a>
+        <a href="Tela acompanhamento.html">Acompanhamento</a>
+        <a href="Tela de ajuda.html">Ajuda</a>
     </div>
 
-    <h1>Acompanhamento</h1>
+    <h1 style="margin-left:5px">Acompanhamento</h1>
 
-    <label for="txtId">Id</label>
-    <input type="text" id="txtId" name="txtId" required />
-    <label for="txtNome">Nome</label>
-    <input type="text" id="txtNome" name="txtNome" required /><br />
-    <label for="txtCpf">CPF</label>
-    <input type="text" id="txtCpf" name="txtCpf" required /><br />
-    <label for="txtEmail">E-mail</label>
-    <input type="email" id="txtEmail" name="txtEmail" required /><br />
-    <label for="dateNascimento">Data de Nascimento</label>
-    <input type="date" id="dateNascimento" name="dateNascimento" required />
+    <label style="margin-left:5px" for="txtNome">ID</label>
+    <input style="margin-left:5px" type="text" id="txtId" name="txtId" required /><br />
+    <label style="margin-left:5px" for="txtNome">Nome</label>
+    <input style="margin-left:5px" type="text" id="txtNome" name="txtNome" required /><br />
+    <label style="margin-left:5px" for="txtCpf">CPF</label>
+    <input style="margin-left:5px" type="text" id="txtCpf" name="txtCpf" required /><br />
+    <label style="margin-left:5px" for="txtEmail">Email</label>
+    <input style="margin-left:5px" type="email" id="txtEmail" name="txtEmail" required /><br />
+    <label style="margin-left:5px" for="dateNascimento">Data de nascimento</label>
+    <input style="margin-left:5px" type="date" id="dateNascimento" name="dateNascimento" required />
     <br />
-    <label for="txtTelefone">Telefone</label>
-    <input type="tel" id="txtTelefone" name="txtTelefone" required />
-    <label for="txtFinanciamento">Financiamento</label>
-    <input type="text" id="txtFinanciamento" name="txtFinanciamento" required /><br />
-    <label for="txtParcelas">Parcelas</label>
-    <input type="text" id="txtParcelas" name="txtParcelas" required /><br />
-
-    <label for="dateInicial">Data Inicial</label>
-    <input type="date" id="dateInicial" name="dateInicial" required /><br />
-    <label for="dateFinal">Data Final</label>
-    <input type="date" id="dateFinal" name="dateFinal" required /><br />
-    <label for="txtMoeda">Moeda</label><br />
-    <select style="border: 2px solid #ccc;background-color: white;width: 30%;padding: 8px 20px;margin: 8px 0;box-sizing: border-box"
+    <label style="margin-left:5px" for="txtTelefone">Telefone</label>
+    <input style="border: 2px solid #ccc;margin-left:5px; background-color: white;width: 60%;padding: 8px 20px;;box-sizing: border-box"
+           type="tel" id="txtTelefone" name="txtTelefone" required />
+    <label style="margin-left:5px" for="txtFinanciamento">Valor do financiamento</label>
+    <input style="margin-left:5px" type="text" id="txtFinanciamento" name="txtFinanciamento" required /><br />
+    <label style="margin-left:5px" for="txtParcelas">Parcelas</label>
+    <input style="margin-left:5px" type="text" id="txtParcelas" name="txtParcelas" required /><br />
+    <label style="margin-left:5px" for="dateInicial">Data inicial</label>
+    <input style="margin-left:5px" type="date" id="dateInicial" name="dateInicial" required /><br />
+    <label style="margin-left:5px" for="dateFinal">Data final</label>
+    <input style="margin-left:5px" type="date" id="dateFinal" name="dateFinal" required /><br />
+    <label style="margin-left:5px" for="txtMoeda">Moeda</label>
+    <select style="border: 2px solid #ccc;background-color: white;width: 20%; margin-left:5px; padding: 8px 20px;box-sizing: border-box"
             id="txtMoeda" name="txtMoeda">
         <option value="txtMoeda">Real</option>
         <option value="txtMoeda">Dólar</option>
@@ -48,30 +48,19 @@
         <option value="txtMoeda">BitCoin</option>
     </select>
     <br />
+    <label style="margin-left:5px" for="txtJuros">  Juros</label>
+    <input style="margin-left:5px" type="text" id="txtJuros" name="txtJuros" required /><br />
+    <label style="margin-left:5px" for="txtValorTotal">  Valor da parcela</label>
+    <input style="margin-left:5px" type="text" id="txtValorTotal" name="txtValorTotal" required /><br />
+
+    <label style="margin-left:5px" for="txtValorParcela">Valor total</label>
+    <input style="margin-left:5px" type="text" id="txtValorParcela" name="txtValorParcela" required /><br />
+    <label style="margin-left:5px" for="dateVencimento">Vencimento</label>
+    <input style="margin-left:5px" type="date" id="dateVencimento" name="dateVencimento" required /><br />
+    <br /><br />
+          <p>Status Financiamento</p>
     <br />
-    <label for="txtJuros">  Juros</label>
-    <input type="text" id="txtJuros" name="txtJuros" required /><br />
-    <label for="txtValorTotal">  Valor Total</label>
-    <input type="text" id="txtValorTotal" name="txtValorTotal" required /><br />
-
-    <label for="txtValorParcela">  Valor da Parcela</label>
-    <input type="text" id="txtValorParcela" name="txtValorParcela" required /><br />
-    <label for="dateVencimento">Vencimento</label>
-    <input type="date" id="dateVencimento" name="dateVencimento" required /><br />
-    <br /><br />
-    <label for="txt">situação do Financiamento Ex: Análise</label><br />
-    <!--situação do Financiamento Ex: Análise-->
-    <br /><br />
-    <label for="txt">Status do financiamento Ex: Pagando</label><br />
-    <!--Status do financiamento Ex: Pagando-->
-    <br /><br />
-    <label for="dateSolicitado">Solicitado</label>
-    <input type="date" id="dateSolicitado" name="dateSolicitado" required /><br />
-
-
-
-
-
+    <button style="width: 200px; margin-left: 20px" class="button" type="submit">Voltar</button>
 
 </body>
 </html>

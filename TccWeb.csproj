@@ -166,13 +166,12 @@
     <Content Include="Tela Financiamento.html" />
     <Content Include="Tela antecipar boleto.html" />
     <Content Include="Tela de ajuda.html" />
-    <Content Include="Tela de alteração de senha.html" />
     <Content Include="Tela de boleto.html" />
     <Content Include="Tela de cadastro.html" />
     <Content Include="Tela acompanhamento.html" />
     <Content Include="Tela de login.html" />
     <Content Include="Tela de quitar financiamento.html" />
-    <Content Include="Tela de recuperação.html" />
+    <Content Include="Tela 2 metodo login.html" />
     <Content Include="Tela de simulação.html" />
     <Content Include="Tela direcionada a função do boleto.html" />
     <Content Include="Tela menu inicial.html" />

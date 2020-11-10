@@ -2,38 +2,38 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Tela de Simulação</title>
+    <title>DP Financiamentos</title>
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
 
     <div class="menu">
-        <a href="#">Home</a>
+        <a href="Tela do Usuário.html">Home</a>
+        <a href="Tela de simulação.html">Simulação</a>
+        <a href="Tela Financiamento.html">Financiamento</a>
         <a href="Tela acompanhamento.html">Acompanhamento</a>
-        <a href="#">Financiamento</a>
-        <a href="#">Simulação</a>
         <a href="Tela de ajuda.html">Ajuda</a>
     </div>
 
-    <h1>Simulação de Financiamento</h1>
+    <h1 style="margin-left: 5px">Simulação de Financiamento</h1>
 
-    <label>Digite sua renda mensal</label>
-    <input type="text" id="txtRenda" name="txtRenda" placeholder="Renda" required /><br />
-    <label>Digite o Valor do Financiamento</label>
-    <input type="text" id="txtVFinanciamento" name="txtVFinanciamento" placeholder="Valor do financiamento" required />
+    <label style="margin-left: 5px" >Digite sua renda mensal</label>
+    <input type="text" id="txtRenda" name="txtRenda" required /><br />
+    <label style="margin-left: 5px" >Digite o valor do financiamento</label>
+    <input type="text" id="txtVFinanciamento" name="txtVFinanciamento" required />
 
-    <label>Digite o número de parcelas que deseja realizar o financiamento</label>
-    <input type="text" id="txtParcelas" name="txtParcelas" placeholder="Parcelas" required /><br />
+    <label style="margin-left: 5px" >Digite o número de parcelas que deseja realizar o financiamento</label>
+    <input type="text" id="txtParcelas" name="txtParcelas" required /><br />
 
     <button class="button" style="width: 200px; margin: 30px" type="submit">Simular</button>
 
     <br />
     <br />
     <textarea>Texto simulando o financiamento... </textarea><br />
-
-    <button class="button" style="width: 180px" type="submit">Voltar</button>
-    <button class="button" style="width: 180px" type="submit">Solicitar</button>
+                                                            <br />
+    <button class="button" style="width: 250px" type="submit">Voltar</button>
+    <a href="Tela Financiamento.html" class="button" style="width: 250px; font-size: 17px " type="submit">Efetuar Financiamento</a>
 
 </body>
 </html>

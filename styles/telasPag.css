@@ -151,25 +151,27 @@ img {
 
 .button2 {
     display: inline-block;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-size: 15px;
-    padding: 20px;
-    width: 400px;
-    transition: all 0.5s;
-    cursor: pointer;
+    border-radius: 4px;
     background-color: black;
     border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
 
-    .button2 span {
+    .button span {
         cursor: pointer;
         display: inline-block;
         position: relative;
-        transition: 1.0s;
+        transition: 0.5s;
     }
 
-        .button2 span:after {
+        .button span:after {
             content: '\00bb';
             position: absolute;
             opacity: 0;
@@ -178,15 +180,15 @@ img {
             transition: 0.5s;
         }
 
-    .button2:hover span {
+    .button:hover span {
         padding-right: 25px;
-        color: #ff6a00
+        color: white;
     }
 
-        .button2:hover span:after {
+        .button:hover span:after {
             opacity: 1;
             right: 0;
-            color: #ff6a00;
+            color: white;
         }
 
 .espaco {
@@ -217,3 +219,4 @@ img {
     width: 100%;
     background-image: url('../Images/fundo.jpg');
 }
+

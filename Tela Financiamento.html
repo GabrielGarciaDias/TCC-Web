@@ -2,34 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Acompanhamento</title>
+    <title>DP Financiamentos</title>
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
     <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Financiamento</a>
-        <a href="#">Acompanhamento</a>
-        <a href="#">Simulação</a>
-        <a href="#">Ajuda</a>
+        <a href="Tela do Usuário.html">Home</a>
+        <a href="Tela de simulação.html">Simulação</a>
+        <a href="Tela Financiamento.html">Financiamento</a>
+        <a href="Tela acompanhamento.html">Acompanhamento</a>
+        <a href="Tela de ajuda.html">Ajuda</a>
     </div>
+
     <br />
-
-    <h1>Financiamento</h1>
-    <!--ATENÇÃO ESTA TUDO EM TEXTO DEPOIUS PASSAR PARA A MOEDA-->
-
-    <label for="txtFinanciamento">Financiamento</label>
+    <h1 style="margin-left: 5px" >Financiamento</h1>
+    <label style="margin-left:5px" for="txtNome">Nome</label>
+    <input type="text" id="txtNome" name="txtNome" required /><br />
+    <label style="margin-left:5px" for="txtCpf">CPF</label>
+    <input type="text" id="txtCpf" name="txtCpf" required /><br />
+    <label style="margin-left:5px" for="txtEmail">E-mail</label>
+    <input type="email" id="txtEmail" name="txtEmail" required /><br />
+    <label style="margin-left:5px" for="dateNascimento">Data de Nascimento</label>
+    <input type="date" id="dateNascimento" name="dateNascimento" required />
+    <br />
+    <label style="margin-left:5px" for="txtTelefone">Telefone</label>
+    <input style="border: 2px solid #ccc;background-color: white;width: 60%;padding: 8px 20px;margin: 8px 0;box-sizing: border-box"
+           type="tel" id="txtTelefone" name="txtTelefone" required />
+    <label style="margin-left:5px" for="txtFinanciamento">Valor do Financiamento</label>
     <input type="text" id="txtFinanciamento" name="txtFinanciamento" required /><br />
-    <label for="txtParcelas">  Parcelas</label>
+    <label style="margin-left:5px" for="txtParcelas">Parcelas</label>
     <input type="text" id="txtParcelas" name="txtParcelas" required /><br />
-
-    <label for="dateInicial">  Data Inicial</label>
+    <!--Analisar se será retirados essas duas funçoes abaixo  -->
+    <label style="margin-left:5px" for="dateInicial">Data Inicial</label>
     <input type="date" id="dateInicial" name="dateInicial" required /><br />
-    <label for="dateFinal">  Data Final</label>
-    <input type="date" id="dateFinal" name="dateFinal" required /><br /><br />
-    <label for="txtMoeda">Moeda</label>
-    <select style="border: 2px solid #ccc;background-color: white;width: 30%;padding: 8px 20px;margin: 8px 0;box-sizing: border-box"
+    <label style="margin-left:5px" for="dateFinal">Data Final</label>
+    <input type="date" id="dateFinal" name="dateFinal" required /><br />
+    <label style="margin-left:5px" for="txtMoeda">Moeda</label>
+    <select style="border: 2px solid #ccc;background-color: white;width: 20%; margin-left:5px; padding: 8px 20px;margin: 8px 0;box-sizing: border-box"
             id="txtMoeda" name="txtMoeda">
         <option value="txtMoeda">Real</option>
         <option value="txtMoeda">Dólar</option>
@@ -37,28 +47,17 @@
         <option value="txtMoeda">BitCoin</option>
     </select>
     <br />
-    <br />
-    <label for="txtJuros">  Juros</label>
+    <label style="margin-left:5px" for="txtJuros">  Juros</label>
     <input type="text" id="txtJuros" name="txtJuros" required /><br />
-    <label for="txtValorTotal">  Valor Total</label>
+    <label style="margin-left:5px" for="txtValorTotal">  Valor da Parcela</label>
     <input type="text" id="txtValorTotal" name="txtValorTotal" required /><br />
 
-    <label for="txtValorParcela">  Valor da Parcela</label>
+    <label style="margin-left:5px" for="txtValorParcela">  Valor Total</label>
     <input type="text" id="txtValorParcela" name="txtValorParcela" required /><br />
-    <label for="dateVencimento">Vencimento</label>
-    <input type="date" id="dateVencimento" name="dateVencimento" placeholder="Aqui aparecerá a data de vencimento do boleto" required /><br />
+    <label style="margin-left:5px" for="dateVencimento">Vencimento</label>
+    <input type="date" id="dateVencimento" name="dateVencimento" required /><br />
     <br /><br />
-    <label for="txt">situação do Financiamento Ex: Análise</label><br />
-    <!--situação do Financiamento Ex: Análise-->
-    <br /><br />
-    <label for="txt">Status do financiamento Ex: Pagando</label><br />
-    <!--Status do financiamento Ex: Pagando-->
-    <br />
-    <br /> 
-    <br />
-    <br />
-    <br />
-
-
+    <button style="width: 200px" class="button" type="submit">Voltar</button>
+    <button style="width: 200px" class="button" type="submit">Solicitar</button>
 </body>
 </html>
