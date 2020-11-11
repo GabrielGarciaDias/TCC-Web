@@ -149,48 +149,6 @@ img {
     }
 }
 
-.button2 {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: black;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
-
-    .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-    }
-
-        .button span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
-
-    .button:hover span {
-        padding-right: 25px;
-        color: white;
-    }
-
-        .button:hover span:after {
-            opacity: 1;
-            right: 0;
-            color: white;
-        }
-
 .espaco {
     padding: 20px;
     line-height: 1.3;
@@ -219,4 +177,26 @@ img {
     width: 100%;
     background-image: url('../Images/fundo.jpg');
 }
+
+ul {
+    list-style-type: none;
+    margin-left:5px;
+    padding: 0;
+    width: 800px;
+    background-color: #c2c2c2;
+    height: 280px;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+    li a:hover {
+        background-color: black;
+        color: white;
+    }
 
